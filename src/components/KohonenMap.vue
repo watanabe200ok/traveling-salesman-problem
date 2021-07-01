@@ -149,7 +149,7 @@ export default {
     },
     tension (decay, range, index) {
       const tension = BASE_TENSION + BASE_TENSION_RATIO * decay
-      return range > 0 ? tension * (1.0 - index / range) : range
+      return range > 0 ? tension * (1.0 - index / range) : tension
     }
   }
 }
